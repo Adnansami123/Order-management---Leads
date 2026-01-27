@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import HeroImage from "./Images/image.png";
+import SalesOrderManagementApp from "./Images/Sales-Order-Management-App.png";
 import FixedForm from "./FixedForm";
 
 import {
@@ -120,7 +121,7 @@ export default function App() {
         </div>
 
         <div className="right">
-          <img src={HeroImage} alt="Field App" className="hero-image" />
+          <img src={SalesOrderManagementApp} alt="Field App" className="hero-image" />
         </div>
       </section>
 
