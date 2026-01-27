@@ -47,7 +47,7 @@ export default function FixedForm() {
     <>
       {/* WhatsApp Floating Icon */}
       <a
-        href="https://wa.me/91XXXXXXXXXX"
+        href="https://wa.me/919618240757"
         className="whatsapp-float"
         target="_blank"
         rel="noreferrer"
