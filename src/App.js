@@ -47,12 +47,12 @@ export default function App() {
     },
     {
       icon: <FaUserClock />,
-      title: "Attendance By Location",
+      title: "Employee/Staff Attendance By Location",
       desc: "Monitor employee presence in real-time with GPS-based location tracking. Simplify attendance verification and improve workforce accountability.",
     },
     {
       icon: <FaMapMarkedAlt />,
-      title: "Client Visit Tracking",
+      title: "Dealer/Retailer Visits Tracking",
       desc: "Record and monitor client visits with GPS-based check-ins. Gain visibility into field activities, build stronger client relationships, and enhance productivity.",
     },
     {
@@ -77,8 +77,8 @@ export default function App() {
     },
     {
       icon: <FaChartPie />,
-      title: "ASM(Area Sales Manager)",
-      desc: "A centralized dashboard for Area Sales Managers to monitor dealer attendance, track live field staff locations, and verify dealer visits in real time.",
+      title: "ASM (Area Sales Manager)",
+      desc: "A centralized dashboard for Area Sales Managers to monitor Sales Executive attendance, Check-In and Orders at Dealer Place, track live field staff locations, and verify dealer Visits in real time.",
     },
     {
   icon: <FaBullseye />,
@@ -96,8 +96,6 @@ export default function App() {
     <>
       {/* ================= FLOATING FORM ================= */}
       <FixedForm />
-
-      {/* ================= HERO ================= */}
       <section className="wrapper">
         <div className="left">
           <div className="logo">
@@ -112,8 +110,10 @@ export default function App() {
 
           <ul>
             <li>Secondary Sale</li>
-            <li>Attendance By Location</li>
-            <li>Client Visit Tracking</li>
+            <li>Employee/ Staff Attendance By Location</li>
+            <li>Dealer/Retailer Visits Tracking</li>
+            <li>Live Tracking</li>
+            <li>Target By Dealer / Retailer</li>
             <li>Follow Up & Payments</li>
             <li>Reports</li>
           </ul>
@@ -142,9 +142,9 @@ export default function App() {
       {/* ================= FOOTER ================= */}
       <footer className="footer">
         <div className="footer-content">
-          <span>© 2025 CalibreCue IT Solutions</span>
+          <span>CalibreCue IT Solutions</span>
           <span>📞 +91 9618240757</span>
-          <a href="mailto:ateeq@calibrecue.com">✉️ ateeq@calibrecue.com</a>
+          <a href="mailto:salesq@calibrecue.in">sales@calibrecue.in</a>
           <span>Hyderabad, Telangana</span>
         </div>
       </footer>
