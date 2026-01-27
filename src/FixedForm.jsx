@@ -10,8 +10,8 @@ export default function FixedForm() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async () => {
-    if (!name || !phone) {
-      alert("Name and phone number are required");
+    if (!name || phone.length !== 10) {
+      alert("Name required & phone must be 10 digits");
       return;
     }
 
@@ -35,7 +35,7 @@ export default function FixedForm() {
       setPhone("");
       setEmail("");
       setOffice("");
-      setOpen(false); // close after submit
+      setOpen(false);
     } catch {
       alert("Submission failed");
     } finally {
@@ -57,43 +57,51 @@ export default function FixedForm() {
           alt="WhatsApp"
         />
       </a>
-      {/* 🔘 Floating Toggle Button */}
-      <button
-        className="form-toggle-btn"
-        onClick={() => setOpen(!open)}
-      >
-        {open ? "✖ Close" : "📩 Enquiry"}
+
+      <button className="form-toggle-btn" onClick={() => setOpen(!open)}>
+        {open ? "✖" : "📩 Enquiry"}
       </button>
 
-      {/* 📩 Floating Form */}
       {open && (
         <div className="fixed-form">
           <h3>📩 Enquiry Form</h3>
 
+          {/* Name – 15 letters */}
           <input
             type="text"
             placeholder="Your Name"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            maxLength={15}
+            onChange={(e) =>
+              setName(e.target.value.replace(/[^a-zA-Z ]/g, ""))
+            }
           />
 
+          {/* Mobile – 10 digits */}
           <input
             type="tel"
             placeholder="Phone Number"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            maxLength={10}
+            onChange={(e) =>
+              setPhone(e.target.value.replace(/\D/g, ""))
+            }
           />
 
+          {/* Email – 20 characters */}
           <input
             type="email"
             placeholder="Email Address"
             value={email}
+            maxLength={30}
             onChange={(e) => setEmail(e.target.value)}
           />
 
+          {/* Office Address – 30 characters */}
           <textarea
             placeholder="Office Address"
             value={officeAdd}
+            maxLength={30}
             onChange={(e) => setOffice(e.target.value)}
           />
 

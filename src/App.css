@@ -62,7 +62,7 @@
 }
 
 .features {
-  padding: 80px 20px;
+  padding: 15px 10px;
   background: #f8fafc;
   font-family: 'Inter', 'Segoe UI', sans-serif;
 }
@@ -280,11 +280,11 @@ a.whatsapp-float img {
 
 .fixed-form {
   position: fixed;
-  top: 50%;
+  top: 53%;
   right: 20px;
   transform: translateY(-50%);
   width: 200px;
-  background: #ffffff;
+  background: #372424;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -398,7 +398,8 @@ a.whatsapp-float img {
   position: fixed;
   right: 20px;
   bottom: 80px;
-  width: 280px;
+  width: 300px;
+  height: 360px;
   background: #ffffff;
   padding: 22px;
   border-radius: 14px;
@@ -431,4 +432,10 @@ a.whatsapp-float img {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: block;
 }
