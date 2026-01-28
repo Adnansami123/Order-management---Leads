@@ -140,12 +140,11 @@ export default function App() {
         </div>
       </section>
 
-      {/* ================= FOOTER ================= */}
       <footer className="footer">
         <div className="footer-content">
           <span>CalibreCue IT Solutions</span>
           <span>📞 +91 9618240757</span>
-          <a href="mailto:salesq@calibrecue.in">sales@calibrecue.in</a>
+          <a href="mailto:sales@calibrecue.in">sales@calibrecue.in</a>
           <span>Hyderabad, Telangana</span>
         </div>
       </footer>
