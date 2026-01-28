@@ -18,7 +18,7 @@ export default function FixedForm() {
     try {
       setLoading(true);
 
-      await fetch("https://development.myschoolzone.in/api/Lead/", {
+      await fetch("https://development.myschoolzone.in/api/Lead/LeadFromAdv", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
