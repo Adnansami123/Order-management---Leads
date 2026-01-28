@@ -18,7 +18,7 @@ export default function FixedForm() {
     try {
       setLoading(true);
 
-      await fetch("http://localhost:5000/api/lead", {
+      await fetch("https://development.myschoolzone.in/api/Lead/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -26,7 +26,7 @@ export default function FixedForm() {
           mobile: phone,
           email,
           officeAddress: officeAdd,
-          userXid: 20,
+          userXid: 12,
         }),
       });
 
